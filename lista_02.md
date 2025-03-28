@@ -241,6 +241,20 @@ Pedidos entre R$50,00 e R$199,99 (inclusive) → "Frete com custo adicional!"
 Pedidos de R$200,00 ou mais → "Frete grátis!"
 ```
 Implemente um pseudocódigo que receba o valor total da compra e exiba a classificação correta do frete para o cliente.
+
+```javascript
+Frete(valorPedido)
+
+If valorPedido <= 0 {
+    retornar: "Valor Inválido!"
+}
+Else if  valorpedido < 50 {
+    retornar: "Frete não disponível!" }
+Else if valorPedido >= 50 e valorPedido <= 199.99 {
+    retorna: "Frete com custo adicional!" }
+Else{
+    retorna: "Frete grátis!" }
+```
 ______
 
 **8)** Considere a implementação da classe base Veiculo em um sistema de modelagem de veículos. Sua tarefa é implementar, utilizando pseudocódigo, as classes derivadas Carro e Moto, que herdam da classe Veiculo, adicionando atributos específicos e métodos para calcular o consumo de combustível de um carro e de uma moto, respectivamente.
@@ -358,4 +372,19 @@ ImprimirMatriz(totalInvestimentos)
 ```
 Agora, implemente a função MultiplicarMatrizesInvestimento(matrizA, matrizB), que multiplica as duas matrizes, simulando o efeito de diferentes fatores de crescimento e impacto financeiro nos investimentos ao longo do tempo.
 
-Função MultiplicarMatrizesInvestimento
+```javascript
+Função MultiplicarMatrizesInvestimento(matrizA, matrizB)
+#Verificar se o número de colunas da matrizA é igual ao número de linhas da matrizB
+
+Se colunas(matrizA) ≠ linhas(matrizB) então:  
+        Retornar "Impossível multiplicar, o número de colunas da matrizA deve ser, obrigatoriamnete, igual ao número de linhas da matrizB"
+         Senão:  
+        linhas <- linhas(matrizB)  
+        colunas <- tamanho(matrizA[0])  
+        matrizResultado <- novaMatriz(linhas(matrizB), colunas(matrizA))  
+
+# Loop para percorrer cada elemento das matrizes e calcular a soma  
+        Para i de 0 até linhas-1 faça:  
+            Para j de 0 até colunas-1 faça:  
+                matrizResultado[iB][jA] <- matrizA[j][i] * matrizB[i][j]
+```
