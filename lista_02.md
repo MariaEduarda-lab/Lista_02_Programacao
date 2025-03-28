@@ -1,19 +1,4 @@
-# Instruções
-
-- Faça uma cópia deste arquivo .md para um repositório próprio
-- Resolva as 6 questões objetivas assinalando a alternativa correta
-- Resolva as 4 questões dissertativas escrevendo no próprio arquivo .md
-  - lembre-se de utilizar as estruturas de código como ``esta aqui com ` `` ou
-```javascript
-//esta aqui com ```
-let a = "olá"
-let b = 10
-print(a)
-```
-- Resolva as questões com uso do Visual Studio Code ou ambiente similar.
-- Teste seus códigos antes de trazer a resposta para cá.
-- Cuidado com ChatGPT e afins: entregar algo só para ganhar nota não faz você aprender e ficar mais inteligente. Não seja dependente da máquina! (E não se envolva em plágio!)
-- ao final, publique seu arquivo lista_02.md com as respostas em seu repositório, e envie o link pela Adalove. 
+# Maria Eduarda Barbosa Oliveira
 
 # Questões objetivas
 
@@ -48,6 +33,8 @@ B) O código avalia a expressão booleana, imprime `false`, calcula o produto do
 C) O código avalia a expressão booleana, imprime `true` e, em seguida, verifica se o número 6 está na lista.
 
 D) O código avalia a expressão booleana, imprime `false` e ordena os valores em ordem crescente.
+
+**A resposta correta é a letra A, visto que, ao declarar a variável, colocou-se condições de verificação, e ao verificar e definir o console.log(resultado), sendo o mesmo nome da variável, será imprimida a resposta de "true" ou 'false", para caso as condições sejam cumpridas ou não. Nesse caso, as condições foram atendidas, e a impressão será true. No segundo caso, é declarada uma constante com um array de valores numéricos, e posteriormente, declarada uma variável produto, com o valor 1. O "for" foi utilizado para declarar uma função de contabilidade, que passa por todos números do array, e os multiplica, um a um, e o console.log imprimirá esse valor.**
 
 
 ______
@@ -110,6 +97,8 @@ B) analisarCredito1() exibirá: 'Seu crédito foi negado. Saldo disponível: -60
 C) analisarCredito1() exibirá: 'Seu crédito foi negado. Saldo disponível: -200.', enquanto analisarCredito2() exibirá: 'Seu crédito foi aprovado. Saldo disponível: 100.'
 
 D) Ambas as funções exibirão: 'Seu crédito foi aprovado Saldo disponível: 500.'
+
+**A resposta é a letra A, visto que ambas funções possuem o memso objetivo, mas utilizam ferramentas diferrentes de loop.**
 ______
 
 **3)** Considere o seguinte trecho de código em JavaScript:
@@ -134,6 +123,8 @@ B) O código verifica se a idade pertence à faixa adulta. Se for, exibe "Você 
 C) O código verifica se a idade está entre 18 e 60 anos e, se for, imprime "Você é um adulto!". Se não estiver nesse intervalo, imprime "Você está na melhor idade!".
 
 D) O código verifica se a idade é menor de 18, entre 18 e 60 ou acima de 60, imprimindo uma mensagem específica para cada caso.
+
+**A alternativa correta é a letra B. Isso acontece pois são feitas condicionais em cadeia, então, caso a primeira condicional não seja atendida, outra condição é colocada, e caso ela não seja atendida, o valor será encaixado em "else", ou seja, todos núemros que não se enocntraram nas cindições anteriores obterão a mesma resposta.**
 ______
 
 **4)** Qual será o resultado impresso no console após a execução do seguinte código?
@@ -203,6 +194,7 @@ Dispositivo 4 não pode ser ligado. Energia insuficiente.
 
 Dispositivo 5 não pode ser ligado. Energia insuficiente.
 
+**A resposta será letra D, visto que ela atende os requisitos apresentados, em que o consumo e a energia restante estão corretos e as condicionais são aplicadas da maneira que devem ser, então, quando a energia disponível se esgota, é ligada a bateria extra e quando a energia se esgota, aparece uma resposta de que a energia é insuficiente.**
 ______
 
 **5)** Qual é a principal função do método update() em um jogo desenvolvido com Phaser.js?
@@ -216,6 +208,8 @@ B) O método update() é chamado continuamente a cada quadro (frame) do jogo, se
 C) O método update() renderiza todos os sprites na tela e garante que a física do jogo seja processada corretamente.
 
 D) O método update() é chamado apenas uma vez após a criação da cena, sendo utilizado para configurar variáveis iniciais do jogo.
+
+**A resposta é a letra B, já que o update serve exatamente pra isso: rodar enquanto a lógica for utilzada e até que haja algum evebto de parada.**
 ______
 
 **6)** Qual é o principal objetivo do módulo Matter.js Physics em Phaser.js?
@@ -230,13 +224,15 @@ C) Renderizar gráficos otimizados para jogos 2D e garantir uma taxa de quadros 
 
 D) Criar animações automáticas para sprites e objetos interativos sem necessidade de programação de movimentação.
 
+**A respota é a letra A, já que o módulo permite a utilização da física e seus parâmetros ou requisitos de aplicação.**
+
 ______
 
 # Questões dissertativas
 
 **7)** Uma loja online deseja implementar um sistema de classificação de pedidos com base no valor total da compra. O sistema deve determinar a categoria de um pedido com as seguintes regras:
 
-```
+```javascript
 
 Pedidos abaixo de R$50,00 → "Frete não disponível!"
 
@@ -249,7 +245,7 @@ ______
 
 **8)** Considere a implementação da classe base Veiculo em um sistema de modelagem de veículos. Sua tarefa é implementar, utilizando pseudocódigo, as classes derivadas Carro e Moto, que herdam da classe Veiculo, adicionando atributos específicos e métodos para calcular o consumo de combustível de um carro e de uma moto, respectivamente.
 
-```
+``` javascript
 Classe Veiculo:
 Atributos:
 
@@ -262,6 +258,31 @@ Método CalcularConsumo():
 ```
 Implementação genérica para cálculo de consumo, a ser sobrescrita pelas subclasses.
 Agora, implemente as classes Carro e Moto, garantindo que ambas herdem de Veiculo e possuam métodos específicos para calcular o consumo de combustível com base na quilometragem e eficiência do veículo.
+
+``` javascript
+Classe Carro que herda de Veeiculo:
+Atributos Novos:
+
+consumoKmPorL //Criei o parâmtro de quantos km por litro o carro faz
+
+Método Construtor(modelo, ano, consumoKmPorL): //Chamar os parâmtros criados na classe mãe e o parâmetro criado na classe filha
+
+Método CalcularConsumo(kilometragem):
+
+kilometragem dividida pelo consumoKmPorL //Cálculo de consumo existente dentro do método calcular consumo
+
+
+Classe Moto que herda de Veeiculo:
+Atributos Novos:
+
+consumoKmPorL //Criei o parâmtro de quantos km por litro a moto faz
+
+Método Construtor(modelo, ano, consumoKmPorL): //Chamar os parâmtros criados na classe mãe e o parâmetro criado na segunda classe filha
+
+Método CalcularConsumo(kilometragem):
+
+kilometragem dividida pelo consumoKmPorL //Cálculo de consumo existente dentro do método calcular consumo
+```
 ______
 
 **9)** Você é um cientista da NASA e está ajudando no desenvolvimento de um sistema de pouso para sondas espaciais em Marte. Seu objetivo é calcular o tempo necessário para que a sonda reduza sua velocidade até um nível seguro para pouso, considerando uma velocidade inicial de entrada na atmosfera marciana e uma taxa de desaceleração constante causada pelo atrito atmosférico e retrofoguetes.
@@ -271,17 +292,46 @@ Entretanto, a sonda não pode ultrapassar um tempo máximo de descida para evita
 Implemente a lógica dessa simulação em pseudocódigo, considerando a seguinte equação para atualização da velocidade:
 
 Considere a fórumla de atualização velocidade:
-```
+``` javascript
     velocidade = velocidadeInicial - desaceleracao * tempo
 ```
 Seu programa deve determinar quanto tempo será necessário para que a sonda atinja uma velocidade segura de pouso, sem ultrapassar os limites estabelecidos.
+
+```javascript
+Criar variáveis:
+
+velocidadeInicial = 900 m/s
+velocidadeSeguranca = 10 m/s
+desaceleracao = 20 m/s²
+tempoMaximo = tempoMaximo
+tempo = 0
+
+update(){ // função de looping
+
+    Se velocidadeInicial > velocidadeSegura e tempo < tempoMaximo deve ocorrer: {
+        velocidadeInicial ← velocidadeInicial - (desaceleracao * 1)  // Atualiza a velocidade a cada segundo
+        tempo ← tempo + 1  //Atualiza o tempo de 1 em 1 segundo
+    }
+
+        Se velocidadeInicial <= velocidadeSegura deve ocorrer: {
+            Resposta: "Pouso seguro ocorreu em " + tempo + " segundos."
+        }
+        Senão ocorrer: {
+            resposta: "Deu ruim!"
+        }
+}
+
+resposta  oficial: Pouso seguro alcançado em 44.5 segundos.
+
+
+```
 ______
 
 **10)** Em um sistema de análise financeira, as operações de investimento de uma empresa podem ser representadas por matrizes, onde cada linha representa um tipo de investimento e cada coluna representa um período de tempo.
 
 A seguir, é fornecida a implementação da função SomarMatrizesInvestimento(matrizA, matrizB), que soma os valores de duas matrizes de investimento. Sua tarefa é implementar uma função semelhante, porém que realize a multiplicação das matrizes de investimento, determinando como os investimentos afetam os resultados ao longo do tempo.
 
-```
+``` javascript
 Função SomarMatrizesInvestimento(matrizA, matrizB):  
     # Verifica se as matrizes têm o mesmo número de linhas e colunas  
     Se tamanho(matrizA) ≠ tamanho(matrizB) então:  
@@ -307,3 +357,5 @@ Escrever("Total de investimentos acumulados:")
 ImprimirMatriz(totalInvestimentos)  
 ```
 Agora, implemente a função MultiplicarMatrizesInvestimento(matrizA, matrizB), que multiplica as duas matrizes, simulando o efeito de diferentes fatores de crescimento e impacto financeiro nos investimentos ao longo do tempo.
+
+Função MultiplicarMatrizesInvestimento
